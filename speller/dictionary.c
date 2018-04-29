@@ -98,7 +98,7 @@ unsigned int size(void)
     }
     else
     {
-    return 0;
+        return 0;
     }
 }
 
@@ -108,7 +108,7 @@ bool unload(void)
     for (int i = 0; i < HASHSIZE; i++)  // iterating through the
     {
         node *cursor = hashtable[i];  // assigning a new node cursor to the head
-        while ( cursor != NULL)  // itterates as long as the cursor is not NULL
+        while (cursor != NULL)   // itterates as long as the cursor is not NULL
         {
             node *temp = cursor;  // create a temp node and assign it to cursor
             cursor = cursor->next;  // advance the cursor
